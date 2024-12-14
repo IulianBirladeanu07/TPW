@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SalaryStatementWebApp.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>ASP.NET Salary Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color: #2D5C8A;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Navigation Bar Styling */
+        #nav {
+            background-color: #2D5C8A; /* Dark blue background */
+            font-family: Arial, sans-serif;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Horizontal menu */
+        }
+
+        .menu > li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu > li > a:hover {
+            background-color: #3D6DA8; /* Lighter blue on hover */
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #3D6DA8;
+            padding: 0;
+            list-style: none;
+            top: 100%; /* Show dropdown below parent */
+            left: 0;
+            min-width: 200px;
+        }
+
+        .dropdown li a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .dropdown li a:hover {
+            background-color: #4D7EB8; /* Even lighter blue */
+        }
+
+        /* Show dropdown on hover */
+        .menu li:hover .dropdown {
+            display: block;
+        }
+
+        #content {
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <!-- Header Section -->
+        <div id="header">
+            <h1>PROJECT ASP.NET APLICAȚIE SALARIZARE - Birladeanu Iulian</h1>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <asp:Label ID="lblDateTime" runat="server" Text=""></asp:Label>
+                </ContentTemplate>
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+                </Triggers>
+            </asp:UpdatePanel>
+            <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick" />
+            <br />
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/image1.jpg" Width="200px" />
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/image2.jpg" Width="200px" />
+            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/image3.jpg" Width="200px" />
+        </div>
+
+        <!-- Navigation Bar -->
+        <div id="nav">
+            <ul class="menu">
+                <li><a href="Home.aspx">Home</a></li>
+                <li>
+                    <a href="#">Introducere date</a>
+                    <ul class="dropdown">
+                        <li><a href="Actualizare.aspx">Actualizare date</a></li>
+                        <li><a href="AdaugareAngajati.aspx">Adaugare</a></li>
+                        <li><a href="Stergere.aspx">Stergere</a></li>
+                        <li><a href="Calculator.aspx">Calcul (daca este cazul)</a></li>
+                    </ul>
+                </li>
+                <li><a href="Rapoarte.aspx">Rapoarte</a></li>
+                <li><a href="Procente.aspx">Procente</a></li>
+            </ul>
+        </div>
+
+        <!-- Content Section -->
+        <div id="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
