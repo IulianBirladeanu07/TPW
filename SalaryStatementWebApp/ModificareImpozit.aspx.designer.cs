@@ -11,70 +11,61 @@ namespace SalaryStatementWebApp
 {
 
 
-    public partial class Calculator
+    public partial class ModificareImpozit
     {
 
         /// <summary>
-        /// txtName control.
+        /// cas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
+        protected global::System.Web.UI.WebControls.TextBox cas;
 
         /// <summary>
-        /// txtFunction control.
+        /// cass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFunction;
+        protected global::System.Web.UI.WebControls.TextBox cass;
 
         /// <summary>
-        /// txtBaseSalary control.
+        /// impozit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBaseSalary;
+        protected global::System.Web.UI.WebControls.TextBox impozit;
 
         /// <summary>
-        /// txtBonus control.
+        /// parola control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBonus;
+        protected global::System.Web.UI.WebControls.TextBox parola;
 
         /// <summary>
-        /// txtPremiiBrute control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPremiiBrute;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
 
         /// <summary>
-        /// btnCalculate control.
+        /// result control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCalculate;
-
-        /// <summary>
-        /// gvResults control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvResults;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl result;
     }
 }

@@ -110,14 +110,20 @@
                 <li>
                     <a href="#">Introducere date</a>
                     <ul class="dropdown">
-                        <li><a href="Actualizare.aspx">Actualizare date</a></li>
-                        <li><a href="AdaugareAngajati.aspx">Adaugare</a></li>
-                        <li><a href="Stergere.aspx">Stergere</a></li>
-                        <li><a href="Calculator.aspx">Calcul (daca este cazul)</a></li>
+                        <li><a href="ActualizareAngajati.aspx">Actualizare date</a></li>
+                        <li><a href="AdaugareAngajati.aspx">Adaugare Angajati</a></li>
+                        <li><a href="StergereAngajati.aspx">Stergere Angajati</a></li>
+                        <li><a href="CalculSalarii.aspx">Calcul (daca este cazul)</a></li>
                     </ul>
                 </li>
-                <li><a href="Rapoarte.aspx">Rapoarte</a></li>
-                <li><a href="Procente.aspx">Procente</a></li>
+                <li>
+                    <a href="#">Rapoarte</a>
+                    <ul class="dropdown">
+                        <li><a href="StatPlata.aspx">Stat plata</a></li>
+                        <li><a href="Fluturas.aspx">Fluturasi</a></li>
+                    </ul>
+                </li>
+                <li><a href="ModificareImpozit.aspx">Modificare</a></li>
             </ul>
         </div>
 

@@ -11,8 +11,53 @@ namespace SalaryStatementWebApp
 {
 
 
-    public partial class AdaugareAngajati
+    public partial class ActualizareAngajati
     {
+
+        /// <summary>
+        /// txtSearchName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSearchName;
+
+        /// <summary>
+        /// btnSearchEmployee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSearchEmployee;
+
+        /// <summary>
+        /// hfEmployeeId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfEmployeeId;
+
+        /// <summary>
+        /// rptEmployees control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptEmployees;
+
+        /// <summary>
+        /// editPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel editPanel;
 
         /// <summary>
         /// txtNume control.
@@ -69,22 +114,22 @@ namespace SalaryStatementWebApp
         protected global::System.Web.UI.WebControls.TextBox txtPremiiBrute;
 
         /// <summary>
-        /// filePoza control.
+        /// btnUpdateEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload filePoza;
+        protected global::System.Web.UI.WebControls.Button btnUpdateEmployee;
 
         /// <summary>
-        /// btnAdaugaAngajat control.
+        /// btnCancelEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdaugaAngajat;
+        protected global::System.Web.UI.WebControls.Button btnCancelEdit;
 
         /// <summary>
         /// lblMessage control.
@@ -94,14 +139,5 @@ namespace SalaryStatementWebApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMessage;
-
-        /// <summary>
-        /// lblSuccessMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSuccessMessage;
     }
 }
